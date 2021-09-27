@@ -355,3 +355,97 @@ html, body {
     height: 160px;
     border-radius: 15px 0 0 15px;
 }
+
+/* Section Activités */
+
+.activites {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.blockActivites {
+    width: 100%;
+    height: 600px;
+}
+
+.blockActivitesSm {
+    width: 23%;
+}
+
+.cardAct {
+    width: 23%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+
+/* Pour les cartes 2 3  5 6  */
+
+.cardActSm {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+    ;
+}
+
+.imgAct1 {
+    background-image: url('./src/img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 530px;
+    border-radius: 15px 15px 0 0;
+}
+
+.imgAct2 {
+    background-image: url('./src/img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    border-radius: 15px 15px 0 0;
+}
+
+.imgAct3 {
+    background-image: url('./src/img/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+}
+
+.imgAct4 {
+    background-image: url('./src/img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 530px;
+    border-radius: 15px 15px 0 0;
+}
+
+.imgAct5 {
+    background-image: url('./src/img/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+}
+
+.imgAct6 {
+    background-image: url('./src/img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+}
+
+.titleAct {
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%;
+    width: 95%;
+}
