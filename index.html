@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
 <body>
     <nav class="sizeNav">
         <div>
-            <div><img class="marglogo" src="./img/logo/Reservia.svg" alt="Logo" width="120px" height="50px"></div>
+            <div><img class="marglogo" src="./src/img/logo/Reservia.svg" alt="Logo" width="120px" height="50px"></div>
             <div class="sizeLiens flexAround">
                 <div class="sizeLien flexCentre bordureNav"><a class="colorLink1 decorationNone"
                         href="#"></a>Hébergements</div>
@@ -46,24 +46,21 @@
                 <div class="margFiltreTitre">
                     <h3>Filtres</h3>
                 </div>
-                <div class="fexBetween filtreTexteIcons"><i
-                        class="fas fa-moiney-bill-wave fa-lg filtreIcons flexCentre"></i>
+                <div class="flexBetween filtreTextIcons"><i
+                        class="fas fa-money-bill-wave fa-lg filtreIcons flexCentre"></i>
                     <div class="filtreTexte flexCentre">Economiques</div>
                 </div>
 
-                <div class="fexBetween filtreTexteIcons"><i
-                        class="fas fa-moiney-bill-wave fa-lg filtreIcons flexCentre"></i>
+                <div class="flexBetween filtreTextIcons"><i class="fas fa-child fa-lg filtreIcons flexCentre"></i>
                     <div class="filtreTexte flexCentre">Familiales</div>
                 </div>
 
-                <div class="fexBetween filtreTexteIcons"><i
-                        class="fas fa-moiney-bill-wave fa-lg filtreIcons flexCentre"></i>
+                <div class="flexBetween filtreTextIcons"><i class="fas fa-heart fa-lg filtreIcons flexCentre"></i>
                     <div class="filtreTexte flexCentre">Romantiques</div>
 
                 </div>
 
-                <div class="fexBetween filtreTexteIcons"><i
-                        class="fas fa-moiney-bill-wave fa-lg filtreIcons flexCentre"></i>
+                <div class="flexBetween filtreTextIcons"><i class="fas fa-dog fa-lg filtreIcons flexCentre"></i>
                     <div class="filtreTexte flexCentre">Animaux autorisés</div>
 
                 </div>
@@ -78,24 +75,94 @@
         </section>
     </header>
     <section class="flexAround">
-        <div class="sizeHebergements backGris">
+        <div class="flexColumnAround sizeHebergements backGris blockHebergements">
             <h3>Hébergements à Marseille</h3>
-            <div>
-                <div>
-                    <div>
-                        <div class="imgHebergements1"></div>
+            <div class="block1 flexBetween">
+                <div class="carteHebergement flexColumnCentre">
+                    <div class="imgHebergements1"></div>
+                    <div class="detailsLogement">
+                        <h3>Auberge la Cannebière</h3>
+                        <p>Nuit à partir de 25€</p>
+                        <div>4</div>
                     </div>
-                    <div>
-                        <h3>Auberge de la Cannebière</h3>
-                        <p>Nuit à partir de 25 €</p>
+                </div>
+                <div class="carteHebergement flexColumnCentre">
+                    <div class="imgHebergements2"></div>
+                    <div class="detailsLogement">
+                        <h3>Hôtel du port</h3>
+                        <p>Nuit à partir de 52€</p>
+                        <div> 5</div>
                     </div>
-                    <div></div>
+                </div>
+                <div class="carteHebergement flexColumnCentre">
+                    <div class="imgHebergements3"></div>
+                    <div class="detailsLogement">
+                        <h3>Hôtel Les mouettes</h3>
+                        <p>Nuit à partir de 76€</p>
+                        <div>4</div>
+                    </div>
                 </div>
             </div>
-            <div></div>
-            <p>Afficher plus</p>
+            <div class="block2 flexBetween">
+                <div class="carteHebergement flexColumnCentre">
+                    <div class="imgHebergements4"></div>
+                    <div class="detailsLogement">
+                        <h3>Auberge la mer</h3>
+                        <p>Nuit à partir de 46€</p>
+                        <div>4</div>
+                    </div>
+                </div>
+                <div class="carteHebergement flexColumnCentre">
+                    <div class="imgHebergements5"></div>
+                    <div class="detailsLogement">
+                        <h3>Auberge le Panier</h3>
+                        <p>Nuit à partir de 23€</p>
+                        <div> 5</div>
+                    </div>
+                </div>
+                <div class="carteHebergement flexColumnCentre">
+                    <div class="imgHebergements6"></div>
+                    <div class="detailsLogement">
+                        <h3>Hôtel chez Amina</h3>
+                        <p>Nuit à partir de 96€</p>
+                        <div>4</div>
+                    </div>
+                </div>
+            </div>
+            <p class="texteGras">Afficher plus</p>
         </div>
-        <div class="sizePopulaires backGris"></div>
+        <div class="sizePopulaires backGris blockPopulaires">
+            <div class="flexBetween">
+                <h2 class="texteGras">Les plus populaires</h2>
+                <div><i class="fas fa-chart-line fa-lg"></i></div>
+            </div>
+            <div class="flexColumnAround">
+                <div class="flexCentre cartePop blockPop12">
+                    <div class="imgPop1"></div>
+                    <div class="detailsPop">
+                        <h3>Hôtel Le Soleil du matin</h3>
+                        <p>Nuit à partir de 128€</p>
+                        <div>etoiles</div>
+                    </div>
+                </div>
+                <div class="flexCentre cartePop blockPop12">
+                    <div class="imgPop2"></div>
+                    <div class="detailsPop">
+                        <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                        <p>Nuit à partir de 71€</p>
+                        <div>etoiles</div>
+                    </div>
+                </div>
+                <div class="flexCentre cartePop">
+                    <div class="imgPop3"></div>
+                    <div class="detailsPop">
+                        <h3>Hôtel Tout Bleu et Blanc</h3>
+                        <p>Nuit à partir de 68€</p>
+                        <div>etoiles</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 
