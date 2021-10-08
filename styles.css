@@ -1,6 +1,6 @@
 html, body {
     color: black;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway';
 }
 
 .flexCentre {
@@ -100,7 +100,12 @@ html, body {
 }
 
 .bordureNav {
-    border-top: 1px solid;
+    border-top: 1px solid transparent;
+}
+
+.bordureNav:hover {
+    border-top: 1px solid #0065fc;
+    cursor: pointer;
 }
 
 .marglogo {
@@ -449,4 +454,23 @@ html, body {
     align-items: center;
     padding-left: 5%;
     width: 95%;
+}
+
+/* FOoter */
+
+.footer {
+    height: 300px;
+    margin-top: 100px;
+}
+
+.sizeBlockFooter {
+    height: 150px;
+}
+
+.margBlock12 {
+    margin-left: 5%;
+}
+
+.margBlock3 {
+    margin-right: 15%;
 }
