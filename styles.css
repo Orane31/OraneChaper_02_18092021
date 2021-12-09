@@ -79,16 +79,21 @@ html, body {
 /* NavBar */
 
 .sizeNav {
-    height: 100px;
+    height: auto;
 }
 
 .sizeLiens {
-    width: 45%;
+    width: 100%;
+}
+
+.sizeLien12 {
+    margin-left: 60%;
 }
 
 .sizeLien {
     width: 140px;
     height: 99px;
+    color: #0065fc;
 }
 
 .colorLink1 {
@@ -112,7 +117,22 @@ html, body {
     margin-bottom: 7px;
 }
 
+.iconFiltre {
+    position: relative;
+}
+
+.iconFiltre:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* Section recherche et filtres */
+
+.desktopNone {
+    display: none;
+}
 
 .bordureSearch {
     width: 400px;
@@ -146,6 +166,11 @@ html, body {
     cursor: pointer;
     border-radius: 0 10px 10px 0;
     border: none;
+}
+
+.buttonSearch:hover {
+    color: #0065fc;
+    background-color: #f2f2f2;
 }
 
 /* style Icones */
@@ -218,20 +243,15 @@ html, body {
     border-radius: 10px;
 }
 
+.titreHebergements {
+    margin: 0;
+}
+
 .sizePopulaires {
     flex: 1;
     height: 650px;
     margin-left: 20px;
     border-radius: 10px;
-}
-
-.imgHebergements1 {
-    background-image: url('./src/img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
 }
 
 .imgHebergements1 {
@@ -307,6 +327,12 @@ html, body {
     background-color: white;
     padding: 1%;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+
+.carteHebergement:hover {
+    cursor: pointer;
+    transform: scale(1.03);
 }
 
 .detailsLogement {
@@ -329,6 +355,11 @@ html, body {
     height: auto;
     padding: 1% 0 1% 1%;
     border-radius: 20px;
+}
+
+.cartePop:hover {
+    cursor: pointer;
+    transform: scale(1.03);
 }
 
 .detailsPop {
@@ -386,6 +417,11 @@ html, body {
     box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
 
+.cardAct:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
 /* Pour les cartes 2 3  5 6  */
 
 .cardActSm {
@@ -393,6 +429,11 @@ html, body {
     border-radius: 15px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
     ;
+}
+
+.cardActSm:hover {
+    cursor: pointer;
+    transform: scale(1.03);
 }
 
 .imgAct1 {
@@ -475,4 +516,206 @@ html, body {
 
 .margBlock3 {
     margin-right: 15%;
+}
+
+.lienFooter {
+    color: black;
+}
+
+.divLienFoot {
+    height: 30px;
+}
+
+/* réglages responsive - media queries */
+
+@media screen and (max-width: 1295px) {
+    .sizeLien12 {
+        margin-left: 35%;
+    }
+    .carteHebergement {
+        min-height: 150px;
+    }
+    .sizeHebergements {
+        min-height: auto;
+        padding: 20px;
+    }
+    .sizePopulaires {
+        min-height: auto;
+        padding: 20px;
+    }
+    .titrePop {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .filtreWrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .filtreTextIcons {
+        margin-bottom: 20px;
+    }
+    #hebergements {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .blockPopulaires {
+        flex: none;
+        width: 90%;
+        margin-left: 0;
+        padding: 5%;
+    }
+    /* .blockHebergements {
+        flex-direction: column;
+        height: auto;
+        padding: 5%;
+        width: 90%;
+    } */
+    .blockHebergements {
+        flex: none;
+        width: 90%;
+        margin-right: 0;
+        margin-top: 50px;
+        padding: 5%;
+        height: auto;
+        background-color: white;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .sizeLiens {
+        width: 90%;
+    }
+    .sizeLien12 {
+        margin-left: 20%;
+    }
+    .block1 {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .block2 {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .carteHebergement {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .detailsLogement {
+        min-height: auto;
+    }
+    .activites {
+        margin-bottom: 0;
+    }
+    .cardAct {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .blockActivites {
+        flex-direction: column;
+        height: auto;
+        padding: 5%;
+        width: 90%;
+    }
+    .blockActivitesSm {
+        width: 100%;
+        height: auto;
+    }
+    .cardActSm {
+        margin-bottom: 50px;
+    }
+    .imgAct1, .imgAct2, .imgAct3, .imgAct4, .imgAct5, .imgAct6 {
+        height: 200px;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding-left: 20px;
+        margin-top: 0;
+    }
+    .margBlock12 {
+        margin-left: 0;
+    }
+    .sizeBlockFooter {
+        height: auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+    /* .sizeLien {
+        flex-direction: row;
+    } */
+    .sizeLien12 {
+        order: 1;
+        width: 100%;
+        margin-left: 0;
+    }
+    .sizeLienMobile {
+        width: 50%;
+        border-top: none;
+    }
+    .sizeLiens {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .sizeLienMobile:hover {
+        border-top: none;
+        border-bottom: 5px solid #0065fc;
+    }
+    /* .mobileTitreh1 {
+        font-size: x-large;
+    } */
+    .bordureSearch {
+        width: auto;
+        border: none;
+        border: 1px solid #f2f2f2;
+        width: max-content;
+    }
+    .recherche {
+        width: 200px;
+    }
+    .buttonSearch {
+        width: 50px;
+        border-radius: 15px;
+    }
+    .desktopNone {
+        display: block;
+    }
+    .mobileNone {
+        display: none;
+    }
+    .margFiltre {
+        padding-left: 5%;
+    }
+    .mobileEconomique {
+        margin-right: 5px;
+    }
+    .mobileFamilial {
+        margin-right: 0;
+    }
+    .filtreTexte {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .info {
+        padding-left: 5%;
+    }
+    .blockPopulaires {
+        border-radius: 0;
+    }
+    .mobileTitleGen {
+        padding-left: 5%;
+    }
+    .sizeHebergements {
+        height: auto;
+    }
+    html, body {
+        margin: 0%;
+        padding: 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
 }
